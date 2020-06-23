@@ -12,12 +12,9 @@ function signup(user) {
       if (res.ok) return res.json();
       throw new Error('Email already taken!');
     })
-    // Parameter destructuring!
       .then(({ token }) => {
     tokenService.setToken(token);
   });
-    // the above could have been written as
-    //.then((token) => token.token);
   }
 
   function getUser() {
@@ -35,7 +32,6 @@ function signup(user) {
       body: JSON.stringify(creds)
     })
     .then(res => {
-      // Valid login if we have a status of 2xx (res.ok)
       if (res.ok) return res.json();
       throw new Error('Bad Credentials!');
     })

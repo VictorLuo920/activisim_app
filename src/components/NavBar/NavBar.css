@@ -5,9 +5,16 @@
   }
   
   .NavBar-link {
-    margin: 0 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
   }
 
   .NavBar-welcome {
     color: grey;
+    margin: 10px;
+  }
+
+  .NavBar-link:hover {
+    font-weight: bold;
   }
