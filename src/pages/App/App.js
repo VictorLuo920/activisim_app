@@ -34,6 +34,7 @@ class App extends Component {
         <Switch>
           <Route exact path='/signup' render={({ history }) =>
             <SignupPage
+            handleSignupOrLogin={this.handleSignupOrLogin}
               history={history}
   
             />
