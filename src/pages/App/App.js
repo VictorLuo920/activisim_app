@@ -22,10 +22,10 @@ class App extends Component {
     this.setState({ user: null });
   }
 
-  handleSignup = () => {
+  handleSignupOrLogin = () => {
     this.setState({user: userService.getUser()});
   }
-  
+
   render() {
 
     return (
@@ -38,9 +38,10 @@ class App extends Component {
   
             />
           } />
-          <Route exact path='/login' render={() =>
+          <Route exact path='/login' render={({history}) =>
             <LoginPage
-  
+            handleSignupOrLogin={this.handleSignupOrLogin}
+            history={history}
             />
           } />
           <Route

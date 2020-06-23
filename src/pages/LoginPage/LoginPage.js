@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './LoginPage.css';
+import userService from '../../utils/userService';
+
 
 class LoginPage extends Component {
   
@@ -9,12 +11,23 @@ class LoginPage extends Component {
     pw: ''
   };
 
-  handleChange = (e) => {
-    // TODO: implement in an elegant way
+  handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await userService.login(this.state);
+      // Successfully signed up - show GamePage
+      this.props.handleSignupOrLogin();
+    } catch (err) {
+      // Invalid user data (probably duplicate email)
+      this.props.updateMessage(err.message);
+    }
   }
 
-  handleSubmit = (e) => {
-    e.preventDefault();
+  handleChange = (e) => {
+    this.setState({
+      // Using ES2015 Computed Property Names
+      [e.target.name]: e.target.value
+    });
   }
 
   render() {

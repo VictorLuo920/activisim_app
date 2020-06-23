@@ -24,7 +24,7 @@ class SignupForm extends Component {
     try {
       await userService.signup(this.state);
       // Successfully signed up - show GamePage
-      this.props.handleSignup();
+      this.props.handleSignupOrLogin();
     } catch (err) {
       // Invalid user data (probably duplicate email)
       this.props.updateMessage(err.message);
