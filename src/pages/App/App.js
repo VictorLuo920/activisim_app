@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar';
@@ -11,8 +11,11 @@ import LoginPage from '../LoginPage/LoginPage';
 import userService from '../../utils/userService';
 import ExplanationPage from '../ExplanationPage/ExplanationPage';
 import ResponsePage from '../ResponsePage/ResponsePage';
+import CommentsPage from '../CommentsPage/CommentsPage';
 
-class App extends Component {
+class App extends React.Component {
+
+  navigation = React.createRef()
 
   state = {
     user: userService.getUser()
@@ -27,6 +30,7 @@ class App extends Component {
   handleSignupOrLogin = () => {
     this.setState({ user: userService.getUser() });
   }
+
 
   render() {
 
@@ -91,6 +95,14 @@ class App extends Component {
             exact path="/responsepage"
             render={(props) => (
               <ResponsePage
+                {...props}
+              />
+            )}
+          />
+          <Route
+            exact path="/commentspage"
+            render={(props) => (
+              <CommentsPage
                 {...props}
               />
             )}
