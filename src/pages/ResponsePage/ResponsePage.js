@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 const ResponsePage = (props) => {
   return (
-    <div className="Home">
+    <div className="explanation-page">
 
         <p>Roleplay Response Page</p>
         <p> user is presented with a pre generated argument to respond to and can choose: </p>
