@@ -12,6 +12,7 @@ import userService from '../../utils/userService';
 import ExplanationPage from '../ExplanationPage/ExplanationPage';
 import ResponsePage from '../ResponsePage/ResponsePage';
 import CommentsPage from '../CommentsPage/CommentsPage';
+import TopicCreatePage from '../TopicCreatePage/TopicCreatePage';
 
 class App extends React.Component {
 
@@ -107,6 +108,12 @@ class App extends React.Component {
               />
             )}
           />
+            <Route exact path='/create' render = {({history}) =>
+            <TopicCreatePage 
+              history={history}
+              user={this.state.user}
+         />
+      } />
         </Switch>
       </div>
     );
