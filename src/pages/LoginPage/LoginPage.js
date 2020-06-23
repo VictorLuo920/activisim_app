@@ -11,15 +11,14 @@ class LoginPage extends Component {
     pw: ''
   };
 
-  handleSubmit = async (e) => {
-    e.preventDefault();
+  handleSubmit = async(e) => {
+    e.preventDefault()
     try {
-      await userService.login(this.state);
-      // Successfully signed up - show GamePage
-      this.props.handleSignupOrLogin();
+        await userService.login(this.state)
+        this.props.handleSignupOrLogin()
+        this.props.history.push('/')
     } catch (err) {
-      // Invalid user data (probably duplicate email)
-      this.props.updateMessage(err.message);
+        alert('invalid credentials!')
     }
   }
 
