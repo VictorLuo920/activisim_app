@@ -3,7 +3,7 @@ const router = express.Router()
 const blmCommentsCtrl = require('../../controllers/blmComments')
 
 router.get('/', blmCommentsCtrl.index)
-router.get('/:id', blmCommentsCtrl.show)
+// router.get('/:id', blmCommentsCtrl.show)
 
 router.use(require('../../config/auth'))
 

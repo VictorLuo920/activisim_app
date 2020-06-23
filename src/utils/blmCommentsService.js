@@ -1,6 +1,6 @@
 import tokenService from './tokenService'
 
-const BASE_URL = '/api/blmCommentss'
+const BASE_URL = '/api/blmComments'
 
 export function index() {
     const options = {
