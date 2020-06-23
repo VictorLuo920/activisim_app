@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar';
@@ -9,57 +9,60 @@ import Terms from '../../components/Terms/Terms'
 import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
 
-function App() {
-  return (
-    <div className="App">
-        <NavBar />
-      <Switch>
-        <Route exact path='/signup' render={({ history }) =>
-          <SignupPage
-            history={history}
+class App extends Component {
+  render() {
 
+    return (
+      <div className="App">
+          <NavBar />
+        <Switch>
+          <Route exact path='/signup' render={({ history }) =>
+            <SignupPage
+              history={history}
+  
+            />
+          } />
+          <Route exact path='/login' render={() =>
+            <LoginPage
+  
+            />
+          } />
+          <Route
+            exact path="/"
+            render={(props) => (
+              <Home
+                {...props}
+              />
+            )}
           />
-        } />
-        <Route exact path='/login' render={() =>
-          <LoginPage
-
+          <Route
+            exact path="/about"
+            render={(props) => (
+              <About
+                {...props}
+              />
+            )}
           />
-        } />
-        <Route
-          exact path="/"
-          render={(props) => (
-            <Home
-              {...props}
-            />
-          )}
-        />
-        <Route
-          exact path="/about"
-          render={(props) => (
-            <About
-              {...props}
-            />
-          )}
-        />
-        <Route
-          exact path="/resources"
-          render={(props) => (
-            <Resources
-              {...props}
-            />
-          )}
-        />
-        <Route
-          exact path="/terms"
-          render={(props) => (
-            <Terms
-              {...props}
-            />
-          )}
-        />
-      </Switch>
-    </div>
-  );
+          <Route
+            exact path="/resources"
+            render={(props) => (
+              <Resources
+                {...props}
+              />
+            )}
+          />
+          <Route
+            exact path="/terms"
+            render={(props) => (
+              <Terms
+                {...props}
+              />
+            )}
+          />
+        </Switch>
+      </div>
+    );
+  }
 }
 
 export default App;
