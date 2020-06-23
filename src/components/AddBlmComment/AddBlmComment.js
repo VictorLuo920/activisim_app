@@ -35,6 +35,8 @@ class AddBlmComment extends React.Component {
             autoComplete='off'
             onSubmit={this.handleSubmit}
           >
+              <div>
+                  <p>title: </p>
             <input
               className="add-input"
               name="title"
@@ -42,6 +44,9 @@ class AddBlmComment extends React.Component {
               value={this.state.formData.title}
               onChange={this.handleChange}
             />
+              </div>
+              <div>
+                  <p>text: </p>
             <input
               className="add-input"
               name="text"
@@ -49,8 +54,9 @@ class AddBlmComment extends React.Component {
               value={this.state.formData.text}
               onChange={this.handleChange}
             />
+              </div>
+              <br />
             <button
-              className="button"
               type="submit"
               disabled={this.state.invalidForm}
             >+</button>

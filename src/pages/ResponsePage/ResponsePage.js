@@ -9,7 +9,6 @@ const ResponsePage = (props) => {
             <ul>
                 <li><Link to="/launchscreen">green</Link>
                     (goes back to launch page to choose another topic, or can go to the 
-                    {/* just blm comment page for now */}
                     <Link to="/blmcommentspage"> comments </Link> 
                     page)
                     </li>

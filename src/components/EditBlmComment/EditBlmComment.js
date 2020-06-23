@@ -42,18 +42,17 @@ class EditBlmComment extends Component {
     render() {
         return (
             <>
-                <div className="derksen-edit-page">
-                    <div className="edit-container">
-                        <div className="edit-header">
+                <div className="">
+                    <div className="">
+                        <div className="">
                             <header>Edit Line</header>
                         </div>
-                        <div className="edit-body">
+                        <div>
                             <form
                                 ref={this.formRef}
                                 autoComplete='off'
                                 onSubmit={this.handleSubmit}>
                                 <input
-                                    className="edit-input"
                                     name='text'
                                     type='text'
                                     value={this.state.formData.text}
@@ -61,19 +60,18 @@ class EditBlmComment extends Component {
                                     required>
                                 </input>
                                 <button
-                                    className="button"
                                     type='submit'
                                     disabled={this.state.invalidForm}
                                 >Update
                                 </button>
                             </form>
-                            <div className="edit-buttons">
-                            <p 
-                                className="delete"
-                                onClick={() => this.props.handleDeleteBlmComment(this.props.match.params.id, this.props.history)}
+                            <div>
+                                <p
+                                    className="delete"
+                                    onClick={() => this.props.handleDeleteBlmComment(this.props.match.params.id, this.props.history)}
                                 >Delete
                                 </p>
-                            <p><Link  to='/blmcommentspage'>Cancel</Link></p>
+                                <p><Link to='/blmcommentspage'>Cancel</Link></p>
                             </div>
                         </div>
                     </div>
