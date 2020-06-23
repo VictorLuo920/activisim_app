@@ -8,6 +8,7 @@ router.get('/', blmCommentsCtrl.index)
 router.use(require('../../config/auth'))
 
 router.post('/', checkAuth, blmCommentsCtrl.create)
+router.put('/:id', checkAuth, blmCommentsCtrl.update)
 
 function checkAuth(req, res, next){
     if (req.user) return next()

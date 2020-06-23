@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar';
 import Home from "../../pages/Home/Home.js";
 import LaunchScreen from "../../pages/LaunchScreen/LaunchScreen.js";
@@ -15,6 +15,7 @@ import BlmCommentsPage from '../BlmCommentsPage/BlmCommentsPage';
 import TopicCreatePage from '../TopicCreatePage/TopicCreatePage';
 import * as blmCommentsService from "../../utils/blmCommentsService";
 import AddBlmComment from '../../components/AddBlmComment/AddBlmComment'
+import EditBlmComment from '../../components/EditBlmComment/EditBlmComment'
 
 class App extends React.Component {
 
@@ -42,6 +43,13 @@ class App extends React.Component {
       items: [...state.blmComments, newBlmComment]
     }),
       () => history.push('/blmcommentspage'));
+  }
+
+  handleUpdateBlmComment = async updatedBlmCommentData => {
+    const updatedBlmComment = await blmCommentsService.update(updatedBlmCommentData)
+    const newblmcommentsArray = this.state.blmComments.map(e =>
+      e._id === updatedBlmComment._id ? updatedBlmComment : e)
+    this.setState({ blmComments: newblmcommentsArray })
   }
 
   async componentDidMount() {
@@ -120,7 +128,7 @@ class App extends React.Component {
             exact path="/blmcommentspage"
             render={(props) => (
               <BlmCommentsPage
-              user={this.state.user}
+                user={this.state.user}
                 handleAddBlmComment={this.handleAddBlmComment}
                 blmComments={this.state.blmComments}
                 newBlmComment={this.state.newBlmComment}
@@ -138,6 +146,21 @@ class App extends React.Component {
                 blmComments={this.state.blmComments}
                 user={this.state.user}
               />
+            )}
+          />
+          <Route
+            path="/editcommentpage/:id"
+            render={(props) => (
+              userService.getUser() ? (
+                <EditBlmComment
+                  {...props}
+                  handleUpdateBlmComment={this.handleUpdateBlmComment}
+                  blmComments={this.state.blmComments}
+                  user={this.state.user}
+                />
+              ) : (
+                  <Redirect to="/login" />
+                )
             )}
           />
           <Route exact path='/create' render={({ history }) =>

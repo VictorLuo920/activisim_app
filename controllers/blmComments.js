@@ -3,9 +3,8 @@ let blmComment = require('../models/blmComment')
 module.exports = {
     create,
     index,
-    // update,
-    // findblmComment,
-    // deleteOne
+    update,
+    findBlmComment,
 
 }
 
@@ -25,35 +24,24 @@ async function index(req, res) {
     res.json(blmComments)
 }
 
-// async function update(req, res) {
-//     try {
-//         const updatedblmComment = await blmComment.findByIdAndUpdate(req.params.id, req.body, {new: true})
-//         res.status(200).json(updatedDanaPost)
-//     }
-//     catch(err){
-//         res.status(500).json(err)
-//     }
-// }
+async function update(req, res) {
+    try {
+        const updatedBlmComment = await blmComment.findByIdAndUpdate(req.params.id, req.body, {new: true})
+        res.status(200).json(updatedBlmComment)
+    }
+    catch(err){
+        res.status(500).json(err)
+    }
+}
 
-// async function findblmComment(req, res) {
-//     console.log(req.params.id)
-//     try {
-//         const foundblmComment = await blmComment.findById(req.params.id)
-//         console.log(foundblmComment)
-//         res.status(200).json(foundblmComment)
-//     }
-//     catch(err){
-//         res.status(500).json(err)
-//     }
-// }
-
-
-// async function deleteOne(req, res) {
-//     try{
-//         const deletedblmComment = await blmComment.findByIdAndRemove(req.params.id);
-//         res.status(200).json(deletedblmComment);
-//     }
-//     catch(err){
-//         res.status(500).json(err);
-//     }
-// }
+async function findBlmComment(req, res) {
+    console.log(req.params.id)
+    try {
+        const foundBlmComment = await blmComment.findById(req.params.id)
+        console.log(foundBlmComment)
+        res.status(200).json(foundBlmComment)
+    }
+    catch(err){
+        res.status(500).json(err)
+    }
+}
