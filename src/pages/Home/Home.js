@@ -5,6 +5,7 @@ const Home = (props) => {
     <div className="Home">
 
         <p>Home</p>
+        <p>Welcome - -</p>
     </div>
   );
 }

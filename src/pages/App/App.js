@@ -10,6 +10,7 @@ import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
 import userService from '../../utils/userService';
 import ExplanationPage from '../ExplanationPage/ExplanationPage';
+import ResponsePage from '../ResponsePage/ResponsePage';
 
 class App extends Component {
 
@@ -82,6 +83,14 @@ class App extends Component {
             exact path="/explanationpage"
             render={(props) => (
               <ExplanationPage
+                {...props}
+              />
+            )}
+          />
+          <Route
+            exact path="/responsepage"
+            render={(props) => (
+              <ResponsePage
                 {...props}
               />
             )}
