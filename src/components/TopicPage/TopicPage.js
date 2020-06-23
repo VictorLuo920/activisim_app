@@ -1,10 +1,12 @@
 import React from 'react';
 
-const About = (props) => {
+
+const TopicPage = (props) => {
     return (
         <div className="Home">
-            <p>About</p>
+
+            <p>TopicPage</p>
         </div>
     );
 }
-export default About;
+export default TopicPage;

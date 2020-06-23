@@ -3,12 +3,13 @@ import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar';
 import Home from "../../pages/Home/Home.js";
-import About from "../../pages/About/About.js";
+import LaunchScreen from "../../pages/LaunchScreen/LaunchScreen.js";
 import Resources from '../../pages/Resources/Resources'
-import Terms from '../../components/Terms/Terms'
+import TopicPage from '../../components/TopicPage/TopicPage'
 import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
 import userService from '../../utils/userService';
+import ExplanationPage from '../ExplanationPage/ExplanationPage';
 
 class App extends Component {
 
@@ -23,26 +24,26 @@ class App extends Component {
   }
 
   handleSignupOrLogin = () => {
-    this.setState({user: userService.getUser()});
+    this.setState({ user: userService.getUser() });
   }
 
   render() {
 
     return (
       <div className="App">
-          <NavBar user={this.state.user} handleLogout={this.handleLogout}/>
+        <NavBar user={this.state.user} handleLogout={this.handleLogout} />
         <Switch>
           <Route exact path='/signup' render={({ history }) =>
             <SignupPage
-            handleSignupOrLogin={this.handleSignupOrLogin}
+              handleSignupOrLogin={this.handleSignupOrLogin}
               history={history}
-  
+
             />
           } />
-          <Route exact path='/login' render={({history}) =>
+          <Route exact path='/login' render={({ history }) =>
             <LoginPage
-            handleSignupOrLogin={this.handleSignupOrLogin}
-            history={history}
+              handleSignupOrLogin={this.handleSignupOrLogin}
+              history={history}
             />
           } />
           <Route
@@ -54,9 +55,9 @@ class App extends Component {
             )}
           />
           <Route
-            exact path="/about"
+            exact path="/launchscreen"
             render={(props) => (
-              <About
+              <LaunchScreen
                 {...props}
               />
             )}
@@ -70,9 +71,17 @@ class App extends Component {
             )}
           />
           <Route
-            exact path="/terms"
+            exact path="/topicpage"
             render={(props) => (
-              <Terms
+              <TopicPage
+                {...props}
+              />
+            )}
+          />
+          <Route
+            exact path="/explanationpage"
+            render={(props) => (
+              <ExplanationPage
                 {...props}
               />
             )}

@@ -1,12 +1,10 @@
 import React from 'react';
 
-
-const Terms = (props) => {
+const LaunchScreen = (props) => {
     return (
         <div className="Home">
-
-            <p>Terms</p>
+            <p>Launch Screen</p>
         </div>
     );
 }
-export default Terms;
+export default LaunchScreen;

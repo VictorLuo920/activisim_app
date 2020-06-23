@@ -21,11 +21,14 @@ const NavBar = (props) => {
         <div className='NavBar'>
             <Link to="/" className='NavBar-link'>Home</Link>
             &nbsp;&nbsp;&nbsp;&nbsp;
-        <Link to="/about" className='NavBar-link'>About</Link>
+        <Link to="/launchscreen" className='NavBar-link'>Launch Screen</Link>
             &nbsp;&nbsp;&nbsp;&nbsp;
-        <Link to="/terms" className='NavBar-link'>Terms</Link>
+        <Link to="/topicpage" className='NavBar-link'>Topic Page</Link>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <Link to="/explanationpage" className='NavBar-link'>ExplanationPage</Link>
             &nbsp;&nbsp;&nbsp;&nbsp;
         <Link to="/resources" className='NavBar-link'>Resources</Link>
+
             {nav}
         </div>
     );
