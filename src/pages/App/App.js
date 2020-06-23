@@ -11,15 +11,19 @@ import LoginPage from '../LoginPage/LoginPage';
 import userService from '../../utils/userService';
 import ExplanationPage from '../ExplanationPage/ExplanationPage';
 import ResponsePage from '../ResponsePage/ResponsePage';
-import CommentsPage from '../CommentsPage/CommentsPage';
+import BlmCommentsPage from '../BlmCommentsPage/BlmCommentsPage';
 import TopicCreatePage from '../TopicCreatePage/TopicCreatePage';
+import * as blmCommentsService from "../../utils/blmCommentsService";
+import AddBlmComment from '../../components/AddBlmComment/AddBlmComment'
 
 class App extends React.Component {
 
   navigation = React.createRef()
 
   state = {
-    user: userService.getUser()
+    user: userService.getUser(),
+    blmComments: [],
+    newBlmComments: []
 
   }
 
@@ -32,7 +36,19 @@ class App extends React.Component {
     this.setState({ user: userService.getUser() });
   }
 
+  handleAddBlmComment = async (newBlmCommentData, history) => {
+    const newBlmComment = await blmCommentsService.create(newBlmCommentData);
+    this.setState(state => ({
+      items: [...state.blmComments, newBlmComment]
+    }),
+      () => history.push('/blmcommentspage'));
+  }
 
+  async componentDidMount() {
+    const blmComments = await blmCommentsService.index();
+    this.setState({ blmComments });
+
+  }
   render() {
 
     return (
@@ -101,19 +117,35 @@ class App extends React.Component {
             )}
           />
           <Route
-            exact path="/commentspage"
+            exact path="/blmcommentspage"
             render={(props) => (
-              <CommentsPage
+              <BlmCommentsPage
+              user={this.state.user}
+                handleAddBlmComment={this.handleAddBlmComment}
+                blmComments={this.state.blmComments}
+                newBlmComment={this.state.newBlmComment}
+                formRef={this.formRef}
                 {...props}
               />
             )}
           />
-            <Route exact path='/create' render = {({history}) =>
-            <TopicCreatePage 
+          <Route
+            exact path="/addblmcomment"
+            render={({ history }) => (
+              <AddBlmComment
+                history={history}
+                handleAddBlmComment={this.handleAddBlmComment}
+                blmComments={this.state.blmComments}
+                user={this.state.user}
+              />
+            )}
+          />
+          <Route exact path='/create' render={({ history }) =>
+            <TopicCreatePage
               history={history}
               user={this.state.user}
-         />
-      } />
+            />
+          } />
         </Switch>
       </div>
     );

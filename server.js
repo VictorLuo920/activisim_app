@@ -18,6 +18,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 app.use('/api/users', require('./routes/api/users'));
 app.use('/api/topics', require('./routes/api/topics'));
+app.use('/api/blmComments', require('./routes/api/blmComments'));
 
 app.get('/*', function(req, res) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
