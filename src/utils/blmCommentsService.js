@@ -39,3 +39,11 @@ export function findNewBlmComment(id) {
         headers: { 'content-type': 'application/json', 'Authorization': 'Bearer ' + tokenService.getToken() }
     }).then(res => res.json())
 }
+
+export function deleteOne(id) {
+    console.log(id)
+    return fetch(`${BASE_URL}/${id}`, {
+        method: 'DELETE',
+        headers: { 'content-type': 'application/json', 'Authorization': 'Bearer ' + tokenService.getToken() }
+    }).then(res => res.json())
+}

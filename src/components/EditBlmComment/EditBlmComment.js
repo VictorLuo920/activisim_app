@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import * as blmCommentsService from "../../utils/blmCommentsService";
+import './EditBlmComment.css';
 
 class EditBlmComment extends Component {
     constructor(props) {
@@ -67,6 +68,11 @@ class EditBlmComment extends Component {
                                 </button>
                             </form>
                             <div className="edit-buttons">
+                            <p 
+                                className="delete"
+                                onClick={() => this.props.handleDeleteBlmComment(this.props.match.params.id, this.props.history)}
+                                >Delete
+                                </p>
                             <p><Link  to='/blmcommentspage'>Cancel</Link></p>
                             </div>
                         </div>

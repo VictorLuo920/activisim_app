@@ -5,7 +5,7 @@ module.exports = {
     index,
     update,
     findBlmComment,
-
+    deleteOne
 }
 
 async function create(req, res) {
@@ -43,5 +43,15 @@ async function findBlmComment(req, res) {
     }
     catch(err){
         res.status(500).json(err)
+    }
+}
+
+async function deleteOne(req, res) {
+    try{
+        const deletedBlmComment = await blmComment.findByIdAndRemove(req.params.id);
+        res.status(200).json(deletedBlmComment);
+    }
+    catch(err){
+        res.status(500).json(err);
     }
 }

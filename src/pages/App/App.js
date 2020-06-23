@@ -52,6 +52,14 @@ class App extends React.Component {
     this.setState({ blmComments: newblmcommentsArray })
   }
 
+  handleDeleteBlmComment = async (id, history) => {
+    console.log(id)
+    await blmCommentsService.deleteOne(id);
+    this.setState(state => ({
+      blmComments: state.blmComments.filter(b => b._id !== id)
+    }), () => history.push('/blmcommentspage'));
+  }
+
   async componentDidMount() {
     const blmComments = await blmCommentsService.index();
     this.setState({ blmComments });
@@ -156,6 +164,7 @@ class App extends React.Component {
                   {...props}
                   handleUpdateBlmComment={this.handleUpdateBlmComment}
                   blmComments={this.state.blmComments}
+                  handleDeleteBlmComment={this.handleDeleteBlmComment}
                   user={this.state.user}
                 />
               ) : (
