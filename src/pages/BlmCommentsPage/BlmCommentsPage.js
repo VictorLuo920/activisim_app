@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import AddBlmComment from '../../components/AddBlmComment/AddBlmComment';
+import { Link } from 'react-router-dom';
 
 class BlmCommentsPage extends React.Component {
 
@@ -10,27 +9,23 @@ class BlmCommentsPage extends React.Component {
       <div>
         <p>CommentsPage</p>
 
-        <Link className="add-service" to="/addblmcomment">Add a comment</Link>
+        <Link to="/addblmcomment">Add a comment</Link>
 
         <section>
           {props.blmComments.map((b) => (
             <article key={b.blmComment}>
               <p>
                 {b.text}
+                {this.props.user._id === b.user && 
+                    <Link
+                      to={{ pathname: '/editcommentpage/' + b._id, state: { blmComment: b.text } }}>
+                      Edit
+                  </Link>
+                      }
                 <em> by {b.creator}</em>
               </p>
             </article>
           ))}</section>
-
-        <Router>
-          <Route exact path="/addblmcomment" render={(props) => (
-            <AddBlmComment
-              handleAddBlmComment={this.handleAddBlmComment}
-              blmComments={this.state.blmComments}
-              user={this.state.user}
-              {...props}
-            />)} />
-        </Router>
       </div>
     );
   }
