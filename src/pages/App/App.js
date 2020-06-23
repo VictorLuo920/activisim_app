@@ -8,13 +8,20 @@ import Resources from '../../pages/Resources/Resources'
 import Terms from '../../components/Terms/Terms'
 import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
+import userService from '../../utils/userService';
 
 class App extends Component {
+
+  state = {
+    user: userService.getUser()
+
+  }
+
   render() {
 
     return (
       <div className="App">
-          <NavBar />
+          <NavBar user={this.state.user}/>
         <Switch>
           <Route exact path='/signup' render={({ history }) =>
             <SignupPage

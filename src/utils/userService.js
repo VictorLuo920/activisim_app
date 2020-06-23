@@ -20,9 +20,13 @@ function signup(user) {
     //.then((token) => token.token);
   }
 
+  function getUser() {
+    return tokenService.getUserFromToken();
+  }
+
   export default {
     signup,
-    // getUser,
+    getUser,
     // logout,
     // login
   }; 
