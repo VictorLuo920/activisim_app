@@ -22,6 +22,10 @@ class App extends Component {
     this.setState({ user: null });
   }
 
+  handleSignup = () => {
+    this.setState({user: userService.getUser()});
+  }
+  
   render() {
 
     return (
