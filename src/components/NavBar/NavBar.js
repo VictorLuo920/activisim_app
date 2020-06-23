@@ -26,6 +26,8 @@ const NavBar = (props) => {
         <Link to="/topicpage" className='NavBar-link'>Topic Page(selected from launch screen)</Link>
             &nbsp;&nbsp;&nbsp;&nbsp;
         <Link to="/resources" className='NavBar-link'>Resources</Link>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        <Link to="/create" className='NavBar-link'>Create Topic</Link>
 
             {nav}
         </div>
