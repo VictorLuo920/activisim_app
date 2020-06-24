@@ -1,31 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import './BlmKeyP2.css'
+import './BlmKeyP1.css'
 
-const BlmKeyP2 = (props) => {
-    return (
-        <>
-            <div className="Home">
-                <p>Blm Key Talking Point 2</p>
-                <div className="explanation-page">
-                    <p>Roleplay Response Page</p>
-                    <p> user is presented with a pre generated argument to respond to and can choose: </p>
-                    <ul>
-                        <li><Link to="/launchscreen">green</Link>
-                            (goes back to launch page to choose another topic, or can go to the
-            <Link to="/blmcommentspage"> comments </Link>
-                            page)
-            </li>
-                        <li><Link to="/resources">yellow</Link> (goes to resources page)</li>
-                        <li>or <Link to="blmcommentspage">red</Link> (goes to comments page)</li>
-                    </ul>
+const BlmKeyP1 = (props) => {
+  return (
+    <div className="Home">
 
-                </div>
-            </div>
-            <div className="blm-kp1">
+        <p>BlmKeyP1</p>
+<div className="blm-kp1">
                 <div className="bkp1-banner">
                     <div className="blmkp1-header">
-                        <p className="response-text"><em>"I don't see color."</em></p>
+                        <p className="response-text"><em>"...but I think </em><strong><em>all lives matter."</em></strong></p>
                     </div>
                     <div className="kp1-container">
 
@@ -36,7 +21,7 @@ const BlmKeyP2 = (props) => {
                         <div className="blmkp1-bar">
                         </div>
                         <div >
-                            <img className="blmkp1-img" src="https://i.postimg.cc/kMjCbGwY/Screen-Shot-2020-06-23-at-10-22-38-PM.png" alt="" />
+                            <img className="blmkp1-img" src="https://i.postimg.cc/bwCdCfXY/Screen-Shot-2020-06-23-at-11-50-13-PM.png" alt="" />
                         </div>
 
                         <div className="under-div">
@@ -44,8 +29,8 @@ const BlmKeyP2 = (props) => {
 
                             </div>
                             <div className="box-p">
-                                <p>“I don’t see color” advice was compiled by Project Ready: Reimagining Equity & Access for For Diverse Youth. For more information on their free online professional development curriculum, you can visit their website:</p>
-                                <p>Project Ready | ready.web.unc.edu</p>
+                                <p>“...but I think all lives matter” advice was compiled by American SportNet Reporter and Producer Donnovan Bennett. For more information you can read his interviews and listen to his podcast:</p>
+                                <p>Donnovan Bennett | Sportsnet</p>
                                 <p>Last Updated: 6/23/20</p>
                             </div>
                         </div>
@@ -79,7 +64,7 @@ const BlmKeyP2 = (props) => {
                     </div>
                 </div>
             </div>
-        </>
-    );
+    </div>
+  );
 }
-export default BlmKeyP2;
+export default BlmKeyP1;
