@@ -20,29 +20,48 @@ class BlmCommentsPage extends React.Component {
         <section>
           {props.blmComments.map((b) => (
             <article key={b.blmComment}>
+
+
               <div className="comments">
+
                 <div className="username">
+                  <div className="avi-div">
+                  <img className="avi" src="https://i.postimg.cc/sxrp4Qz1/Screen-Shot-2020-06-24-at-12-14-54-PM.png" alt=""/>
+                  </div>
+
+                <div className="comment-box">
+                  <div className="username-and-edit">
                   <p className="comment-p"> {b.creator}</p>
-                </div>
-                <div className="comment-text">
-                  <p>{b.time}</p>
-                  <p>{b.text}</p> 
-                </div>
-                  
+                  &nbsp;&nbsp;&nbsp;&nbsp;
                 <p>
                   {this.props.user._id === b.user &&
                     <Link
+                    className="edit-link"
                       to={{ pathname: '/editcommentpage/' + b._id, state: { blmComment: b.text } }}>
-                      Edit
+                      <em>edit</em>
                   </Link>
                   }
                 </p>
+                </div>
+                <div className="comment-text">
+                  <p>{b.text}</p> 
+                </div>
+                </div>
+                  </div>
+                              <hr></hr>
+
+
               </div>
+
+
+
             </article>
           ))}</section>
+
           <div className="more-button">
-          <p>Show More...</p>
+          <p className="end-back">Show More...</p>
           </div>
+          
           <div className="share">
             <h1>Share your Experience</h1>
           </div>
@@ -62,7 +81,7 @@ class BlmCommentsPage extends React.Component {
         </div>
         <div className="end-buttons">
           <div className="end-back">
-            <Link to="/blmcommonresponses" className="pkp1-back-link">Back to review</Link>
+            <Link to="/blmkp2" className="pkp1-back-link">Back to review</Link>
           </div>
           <div className="right-end-buttons"></div>
           <div className="yellow">

@@ -1,3 +1,29 @@
-body {
-    background: #247BA0;
+.select-search-bar {
+    width: 300px;
+    margin-left: 570px;
+}
+
+.home-header {
+    background-color: #70C1B3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    /* margin-bottom: 100px; */
+    color: white;
+    flex-direction: row;
+}
+
+.home-img {
+    width: 400px;
+}
+
+.home-header-text {
+    margin-top: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.searchbar {
+    background-color: #70C1B3;
+    padding: 20px;
 }

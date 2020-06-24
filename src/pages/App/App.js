@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import NavBar from '../../components/NavBar/NavBar.jsx';
+// import NavBar from '../../components/NavBar/NavBar';
 import Home from "../../pages/Home/Home.js";
 import LaunchScreen from "../../pages/LaunchScreen/LaunchScreen.js";
 import Resources from '../../pages/Resources/Resources'
@@ -74,7 +74,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <NavBar user={this.state.user} handleLogout={this.handleLogout} />
+        {/* <NavBar user={this.state.user} handleLogout={this.handleLogout} /> */}
         <Switch>
           <Route exact path='/signup' render={({ history }) =>
             <SignupPage

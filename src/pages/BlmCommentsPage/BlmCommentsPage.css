@@ -22,16 +22,29 @@
 .comments {
     width: 600px;
     margin-left: 400px;
+    padding: 20px;
 }
-.username {
-    background-color: aliceblue;
+
+/* .avi-div {} */
+
+.avi {
+    width: 100px;
+    margin-right: 40px;
+}
+
+.username-and-edit {
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
-    
+}
+
+.username {
+    display: flex;
+    /* justify-content: flex-start; */
+    flex-direction: row;
 }
 
 .comment-text {
-    background-color: lightpink;
     display: flex;
     justify-content: flex-start;
     margin-left: 20px;
@@ -45,11 +58,16 @@
     display: flex;
     justify-content: center;
 }
+
+.more-button {
+    margin-left: 600px;
+}
+
 .add-button {
     background-color: #F25F5C;
     border-radius: 5px;
     margin: 100px;
-    width: 150px;    
+    width: 150px;
     padding: 10px;
 }
 
@@ -78,13 +96,14 @@
     border: solid 2px black;
     border-radius: 5px;
     margin: 10px;
-    width: 150px;    
+    width: 150px;
     padding: 10px;
 }
 
 .end-back:hover {
     background-color: lightgrey;
 }
+
 .right-end-buttons {
     display: flex;
     flex-direction: row;
@@ -94,5 +113,11 @@
 .link {
     text-decoration: none;
     color: white;
+    font-weight: bold;
+}
+
+.edit-link {
+    /* text-decoration: none; */
+    color: grey;
     font-weight: bold;
 }

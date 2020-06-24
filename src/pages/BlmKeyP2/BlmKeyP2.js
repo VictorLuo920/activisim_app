@@ -5,23 +5,6 @@ import './BlmKeyP2.css'
 const BlmKeyP2 = (props) => {
     return (
         <>
-            <div className="Home">
-                <p>Blm Key Talking Point 2</p>
-                <div className="explanation-page">
-                    <p>Roleplay Response Page</p>
-                    <p> user is presented with a pre generated argument to respond to and can choose: </p>
-                    <ul>
-                        <li><Link to="/launchscreen">green</Link>
-                            (goes back to launch page to choose another topic, or can go to the
-            <Link to="/blmcommentspage"> comments </Link>
-                            page)
-            </li>
-                        <li><Link to="/resources">yellow</Link> (goes to resources page)</li>
-                        <li>or <Link to="blmcommentspage">red</Link> (goes to comments page)</li>
-                    </ul>
-
-                </div>
-            </div>
             <div className="blm-kp1">
                 <div className="bkp1-banner">
                     <div className="blmkp1-header">
@@ -40,8 +23,8 @@ const BlmKeyP2 = (props) => {
                         </div>
 
                         <div className="under-div">
-                            <div className="box">
-
+                            <div>
+                                    <img  className="box"src="https://i.postimg.cc/prTSx69D/Screen-Shot-2020-06-24-at-12-12-43-PM.png" alt=""/>
                             </div>
                             <div className="box-p">
                                 <p>“I don’t see color” advice was compiled by Project Ready: Reimagining Equity & Access for For Diverse Youth. For more information on their free online professional development curriculum, you can visit their website:</p>
