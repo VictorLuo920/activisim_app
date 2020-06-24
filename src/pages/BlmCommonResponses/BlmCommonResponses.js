@@ -5,7 +5,7 @@ import './BlmCommonResponses.css'
 const BlmCommonResponses = (props) => {
 
   return (
-    <div className="page-background">
+    <div className="blm-responses-page-background">
         <br/>
         <div className="response-page-banner">
         <div className="responses-header">
@@ -14,10 +14,10 @@ const BlmCommonResponses = (props) => {
         </div>
             <br></br>
             <div className="response-1">
-            <Link to="blmkeytalkingpoints1" className="response-text"><em>"...but I think </em><strong><em>all lives matter."</em></strong></Link>
+            <Link to="blmkp1" className="response-text"><em>"...but I think </em><strong><em>all lives matter."</em></strong></Link>
             </div>
             <div className="response-2">
-                <Link to="blmkeytalkingpoints2" className="response-text"><em>"I don't see color."</em></Link>
+                <Link to="blmkp2" className="response-text"><em>"I don't see color."</em></Link>
             </div>
             <br/>
         </div>

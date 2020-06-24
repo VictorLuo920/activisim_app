@@ -13,7 +13,7 @@ const ResponsePage = (props) => {
                     page)
                     </li>
                 <li><Link to="/resources">yellow</Link> (goes to resources page)</li>
-                <li>or <Link to="commentspage">red</Link> (goes to comments page)</li>
+                <li>or <Link to="blmcommentspage">red</Link> (goes to comments page)</li>
             </ul>
            
     </div>
