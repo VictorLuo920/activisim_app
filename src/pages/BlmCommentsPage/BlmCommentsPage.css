@@ -122,3 +122,9 @@
     color: grey;
     font-weight: bold;
 }
+
+.edit-link:hover {
+    /* text-decoration: none; */
+    color: black;
+    font-weight: bold;
+}

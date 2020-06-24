@@ -21,11 +21,12 @@
 .home-header-text {
     margin-top: 200px;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .searchbar {
     background-color: #70C1B3;
-    padding: 20px;
+    padding: 60px;
 }
 
 .popular   {
