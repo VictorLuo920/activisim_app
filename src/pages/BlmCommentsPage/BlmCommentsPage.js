@@ -57,9 +57,11 @@ class BlmCommentsPage extends React.Component {
 
             </article>
           ))}</section>
+
           <div className="more-button">
           <p className="end-back">Show More...</p>
           </div>
+          
           <div className="share">
             <h1>Share your Experience</h1>
           </div>

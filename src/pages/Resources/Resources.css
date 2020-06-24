@@ -1,6 +1,6 @@
 .resources-page-background {
     background-color: white;
-    height: 1200px;
+    height: 3000px;
 }
 
 .resources {
@@ -19,8 +19,63 @@
 
 }
 
-.news {
+.row {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    /* margin: 10px; */
+}
+
+.founders {
+    /* border: solid 1px black; */
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.founders-content {
+    border: solid 15px;
+    border-color: #FFCB63;
+    border-radius: 5px;
+    width: 280px;
+    height: 300px;
+    /* margin-left: 40px; */
+}
+
+.founders-text {
+    text-align: start;
+    font-size: 10px;
+}
+
+.link-div {
+    margin: 60px;
+}
+.resource-link {
+    text-decoration: none;
+    color: black;
+}
+
+.resource-link:hover {
+    font-weight: bold;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    margin-right: 100px;
+}
+.news-content {
+    border: solid 15px;
+    border-color: #FFCB63;
+    border-radius: 5px;
+    width: 380px;
+    height: 200px;
+    margin: 40px;
+}
+
+.read-article-news {
+    display: flex;
+    justify-content: flex-end;
 }

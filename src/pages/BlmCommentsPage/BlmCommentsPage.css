@@ -25,12 +25,11 @@
     padding: 20px;
 }
 
-.avi-div {
-}
+.avi-div {}
+
 .avi {
     width: 100px;
     margin-right: 40px;
-
 }
 
 .username-and-edit {
@@ -38,11 +37,11 @@
     flex-direction: row;
     justify-content: flex-start;
 }
+
 .username {
     display: flex;
     /* justify-content: flex-start; */
     flex-direction: row;
-    
 }
 
 .comment-text {
@@ -59,11 +58,16 @@
     display: flex;
     justify-content: center;
 }
+
+.more-button {
+    margin-left: 600px;
+}
+
 .add-button {
     background-color: #F25F5C;
     border-radius: 5px;
     margin: 100px;
-    width: 150px;    
+    width: 150px;
     padding: 10px;
 }
 
@@ -92,13 +96,14 @@
     border: solid 2px black;
     border-radius: 5px;
     margin: 10px;
-    width: 150px;    
+    width: 150px;
     padding: 10px;
 }
 
 .end-back:hover {
     background-color: lightgrey;
 }
+
 .right-end-buttons {
     display: flex;
     flex-direction: row;
