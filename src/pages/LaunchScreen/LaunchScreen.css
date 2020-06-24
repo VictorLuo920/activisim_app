@@ -38,5 +38,9 @@
     flex-direction: row;
     margin: 100px;
     justify-content: center;
+    height: 100px;
 }
 
+.prison-p {
+    margin: 0px;
+}
