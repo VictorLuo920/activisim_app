@@ -1,0 +1,133 @@
+.page-background {
+    background-color: lightgrey;
+    height: 1200px;
+}
+
+.page-banner {
+    z-index: 1;
+    background-color: white;
+    margin-top: 200px;
+    height: 670px;
+}
+
+.blm-page {
+    display: flex;
+    flex-direction: row;
+    margin-left: 270px;
+
+}
+
+
+.blm-header {
+    display: flex;
+    justify-content: flex-start;
+    font-family: arial;
+    margin-left: 100px;
+}
+
+.bar {
+    background-color: black;
+    height: 5px;
+    width: 200px;
+    margin-left: 100px;
+}
+
+.blm-logo{
+    margin-top: 60px;
+    width: 352px;
+    height: 400px;
+}
+
+
+.blm-content {
+    width: 300px;
+    display: flex;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.blm-content-header {
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.blm-p {
+    display: flex;
+    justify-content: flex-start;
+    width: 230px;
+}
+
+.next-links {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.bar-2 {
+    background-color: black;
+    height: 5px;
+    width: 200px;
+    margin-left: 1150px;
+}
+
+
+
+.blm-buttons {
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.back-link {
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 15px;
+    width: 130px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+}
+
+.back-link:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+}
+
+.common-responses-link {
+    background-color: #70c1b3;
+    /* margin-left: 1050px; */
+    border-radius: 10px;
+    /* padding: 15px; */
+    width: 150px;
+    /* height: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 800px;
+}
+.common-responses-link:hover {
+    background-color: #46a495;
+}
+.green-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-left: 37px;
+    font-size: 11px;
+}
+
+h5 {
+    margin: 0px;
+}
+
+.home-link {
+    text-decoration: none;
+    color: black;
+}
