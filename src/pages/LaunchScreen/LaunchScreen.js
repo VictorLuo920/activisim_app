@@ -21,7 +21,7 @@ const LaunchScreen = (props) => {
                 </div>
                         <div className="searchbar">
                             <Dropdown />
-                           
+                        
                         </div>
                         <h1>Thanks for taking a step towards creating change {props.user.name}!</h1>
                         <div className="discussion-bar">
