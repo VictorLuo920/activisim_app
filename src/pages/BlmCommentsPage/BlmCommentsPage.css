@@ -48,6 +48,7 @@
     display: flex;
     justify-content: flex-start;
     margin-left: 20px;
+    text-align: start;
 }
 
 .comment-p {
@@ -119,5 +120,11 @@
 .edit-link {
     /* text-decoration: none; */
     color: grey;
+    font-weight: bold;
+}
+
+.edit-link:hover {
+    /* text-decoration: none; */
+    color: black;
     font-weight: bold;
 }

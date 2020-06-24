@@ -38,7 +38,7 @@ class BlmCommentsPage extends React.Component {
                     <Link
                     className="edit-link"
                       to={{ pathname: '/editcommentpage/' + b._id, state: { blmComment: b.text } }}>
-                      <em>edit</em>
+                      <em>Edit</em>
                   </Link>
                   }
                 </p>
@@ -61,7 +61,7 @@ class BlmCommentsPage extends React.Component {
           <div className="more-button">
           <p className="end-back">Show More...</p>
           </div>
-          
+
           <div className="share">
             <h1>Share your Experience</h1>
           </div>

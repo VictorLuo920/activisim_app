@@ -1,4 +1,5 @@
 import React from "react";
+import './AddBlmComment.css'
 
 class AddBlmComment extends React.Component {
   state = {
@@ -27,40 +28,35 @@ class AddBlmComment extends React.Component {
         <div className="add-container">
           <div className="add-label">
             <label>
-              <em>add a comment</em>&nbsp;
+              <em>Add a Comment</em>&nbsp;
           </label>
           </div>
-          <form
+          <div className="form-container">
+
+         
+          <form 
+          className="form"
             ref={this.formRef}
             autoComplete='off'
             onSubmit={this.handleSubmit}
           >
-              <div>
-                  <p>title: </p>
-            <input
-              className="add-input"
-              name="title"
-              type="text"
-              value={this.state.formData.title}
-              onChange={this.handleChange}
-            />
-              </div>
-              <div>
-                  <p>text: </p>
-            <input
+            <textarea 
+            rows="8" cols="45" 
               className="add-input"
               name="text"
               type="text"
               value={this.state.formData.text}
               onChange={this.handleChange}
             />
-              </div>
+             
               <br />
             <button
+            className="add"
               type="submit"
               disabled={this.state.invalidForm}
             >+</button>
-          </form>
+          </form> 
+          </div> 
         </div>
       </div>
     )

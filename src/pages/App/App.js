@@ -93,6 +93,7 @@ class App extends React.Component {
             exact path="/"
             render={(props) => (
               <Home
+              handleLogout={this.handleLogout}
               user={this.state.user}
                 {...props}
               />
