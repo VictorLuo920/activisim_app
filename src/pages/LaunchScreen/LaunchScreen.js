@@ -49,8 +49,8 @@ const LaunchScreen = (props) => {
                 <div className="end-buttons-launch">
                     <div className="end-back"><p>Affirmative Action</p></div>
                 
+                    <div className="end-back"><p className="prison-p">Prison Industrial Complex</p></div>
                 <div>
-                    <div className="end-back"><p>Prison Industrial Complex</p></div>
                 </div>
                 </div>
             </div>

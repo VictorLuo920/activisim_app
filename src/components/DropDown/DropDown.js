@@ -36,9 +36,9 @@ showDropdownMenu(event) {
           { this.state.displayMenu ? (
           <ul className="drop-ul">
          <a href="blacklivesmatter"><li className="drop-li">Black Lives Matter</li></a>
-         <a className="active" href="topicpage"><li className="drop-li">Prison Industrial Complex</li></a>
-         <a href="topicpage"><li className="drop-li">Wearing Face Masks</li></a>
-         <a href="topicpage"><li className="drop-li">Antifa</li></a>
+         <a className="active" href=""><li className="drop-li">Prison Industrial Complex</li></a>
+         <a href=""><li className="drop-li">Wearing Face Masks</li></a>
+         <a href=""><li className="drop-li">Antifa</li></a>
           </ul>
         ):
         (
