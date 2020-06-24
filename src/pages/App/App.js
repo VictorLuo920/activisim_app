@@ -18,8 +18,7 @@ import TopicCreatePage from '../TopicCreatePage/TopicCreatePage';
 import * as blmCommentsService from "../../utils/blmCommentsService";
 import AddBlmComment from '../../components/AddBlmComment/AddBlmComment'
 import EditBlmComment from '../../components/EditBlmComment/EditBlmComment'
-import BlmKeyP1 from "../../pages/BlmKeyP1/BlmKeyP1.js";
-import BlmKeyP2 from "../../pages/BlmKeyP2/BlmKeyP2.js";
+import SocialDistancingCommentsPage from '../SocialDistancingCommentsPage/SocialDistancingCommentsPage'
 
 class App extends React.Component {
 
@@ -44,7 +43,7 @@ class App extends React.Component {
   handleAddBlmComment = async (newBlmCommentData, history) => {
     const newBlmComment = await blmCommentsService.create(newBlmCommentData);
     this.setState(state => ({
-      items: [...state.blmComments, newBlmComment]
+      blmComments: [...state.blmComments, newBlmComment]
     }),
       () => history.push('/blmcommentspage'));
   }
@@ -156,6 +155,19 @@ class App extends React.Component {
             exact path="/blmcommentspage"
             render={(props) => (
               <BlmCommentsPage
+                user={this.state.user}
+                handleAddBlmComment={this.handleAddBlmComment}
+                blmComments={this.state.blmComments}
+                newBlmComment={this.state.newBlmComment}
+                formRef={this.formRef}
+                {...props}
+              />
+            )}
+          />
+          <Route
+            exact path="/socialdistancingcommentspage"
+            render={(props) => (
+              <SocialDistancingCommentsPage
                 user={this.state.user}
                 handleAddBlmComment={this.handleAddBlmComment}
                 blmComments={this.state.blmComments}
