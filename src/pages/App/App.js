@@ -19,7 +19,7 @@ import * as blmCommentsService from "../../utils/blmCommentsService";
 import AddBlmComment from '../../components/AddBlmComment/AddBlmComment'
 import EditBlmComment from '../../components/EditBlmComment/EditBlmComment'
 import SocialDistancingCommentsPage from '../SocialDistancingCommentsPage/SocialDistancingCommentsPage'
-import BlmKeyP1 from "../../pages/BlmKeyP1/BlmKeyP1.js";
+// import BlmKeyP1 from "../../pages/BlmKeyP1/BlmKeyP1.js";
 import BlmKeyP2 from "../../pages/BlmKeyP2/BlmKeyP2.js";
 
 class App extends React.Component {
@@ -212,14 +212,6 @@ class App extends React.Component {
               user={this.state.user}
             />
           } />
-          <Route
-            exact path="/blmkp1"
-            render={(props) => (
-              <BlmKeyP1
-                {...props}
-              />
-            )}
-          />
           <Route
             exact path="/blmkp2"
             render={(props) => (
