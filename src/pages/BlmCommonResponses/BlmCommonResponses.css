@@ -1,0 +1,33 @@
+.response-page-banner {
+    background-color: white;
+    margin-top: 100px;
+}
+
+.responses-header {
+    margin: 20px;
+}
+
+.response-1 {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 200px;
+}
+
+.response-2 {
+    background-color: #247BA0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-bottom: 100px;
+}
+
+.response-text {
+    color: white;
+    font-size: 21px;
+    text-decoration: none;
+}

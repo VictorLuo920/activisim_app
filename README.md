@@ -14,5 +14,5 @@ React, Express, Node.js, MongoDB Atlas, Mongoose
 
 ## Contributors
 UX Team: Freddy Chen, Alyssa Campbell
-Engineering Team: Isa Martinez, John Khristian Trujillo, Victor Luo
+Engineering Team: Isa Martinez, John Khrizhtian Trujillo, Victor Luo
 
