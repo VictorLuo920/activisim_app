@@ -1,0 +1,98 @@
+.comments-page-background {
+    background-color: white;
+}
+
+.discussion {
+    background-color: #F25F5C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-bottom: 100px;
+    color: white;
+}
+
+.discussion-bar {
+    background-color: black;
+    width: 1200px;
+    height: 10px;
+    margin-left: 100px;
+}
+
+.comments {
+    width: 600px;
+    margin-left: 400px;
+}
+.username {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.comment-text {
+    background-color: lightpink;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.comment-p {
+    font-weight: bold;
+}
+
+.center-red {
+    display: flex;
+    justify-content: center;
+}
+.add-button {
+    background-color: #F25F5C;
+    border-radius: 5px;
+    margin: 100px;
+    width: 150px;    
+    padding: 10px;
+}
+
+.add-button:hover {
+    background-color: #ef3734;
+}
+
+.thanks-text {
+    margin-left: 700px;
+}
+
+.discussion-bar-2 {
+    background-color: black;
+    width: 800px;
+    height: 10px;
+    margin-left: 500px;
+}
+
+.end-buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+}
+
+.end-back {
+    border: solid 2px black;
+    border-radius: 5px;
+    margin: 10px;
+    width: 150px;    
+    padding: 10px;
+}
+
+.end-back:hover {
+    background-color: lightgrey;
+}
+.right-end-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-left: 600px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
