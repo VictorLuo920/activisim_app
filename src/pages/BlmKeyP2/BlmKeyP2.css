@@ -1,0 +1,138 @@
+.bkp1-banner {
+    background-color: white;
+    height: 2000px;
+}
+
+.kp1-container {
+    margin: 75px;
+}
+.blmkp1-header {
+    background-color: #247BA0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-bottom: 100px;
+}
+
+.bkp1-body{
+    background-color: white;
+    height: 100px;
+}
+
+.blmkp1-text-header {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 100px;
+}
+
+.blmkp1-bar {
+    background-color: black;
+    width: 800px;
+    height: 10px;
+    margin-left: 100px;
+}
+
+.blmkp1-img {
+    height: 800px;
+    margin-top: 100px;
+}
+
+.under-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box {
+    border: solid 1px grey;
+    height: 200px;
+    width: 200px;
+    margin-top: 40px;
+
+}
+.box-p {
+    width: 400px;
+    margin: 20px;
+    text-align: start;
+}
+
+.feeling {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    padding: 20px;
+}
+
+.blmkp1-bar-2 {
+    background-color: black;
+    width: 630px;
+    height: 10px;
+    margin-left: 600px;
+}
+
+.feeling-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 100px;
+}
+
+.back {
+    border: solid 2px black;
+    border-radius: 5px;
+    margin: 10px;
+    width: 150px;    
+    padding: 10px;
+}
+
+.back:hover {
+    font-weight: bold;
+    cursor: pointer;
+    background-color: lightgrey;
+}
+.pkp1-back-link {
+    text-decoration: none;
+    color: black;
+}
+
+.green {
+    background-color: #70C1B3;
+    border-radius: 5px;
+    margin: 10px;
+    width: 150px;    
+    padding: 10px;
+}
+
+.yellow {
+    background-color: #FFCB63;
+    border-radius: 5px;
+    margin: 10px;
+    width: 150px;    
+    padding: 10px;
+}
+
+.text-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.red:hover {
+    background-color: #ef3734;
+}
+
+.yellow:hover {
+    background-color: #ffb624;
+}
+
+.green:hover {
+    background-color: #3a887b;
+}
+
+.red {
+    background-color: #F25F5C;
+    border-radius: 5px;
+    margin: 10px;
+    width: 150px;    
+    padding: 10px;
+}

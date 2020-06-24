@@ -96,6 +96,7 @@
 }
 
 .back-link:hover {
+    font-weight: bold;
     cursor: pointer;
     background-color: lightgrey;
 }
