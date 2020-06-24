@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import NavBar from '../../components/NavBar/NavBar';
+import NavBar from '../../components/NavBar/NavBar.jsx';
 import Home from "../../pages/Home/Home.js";
 import LaunchScreen from "../../pages/LaunchScreen/LaunchScreen.js";
 import Resources from '../../pages/Resources/Resources'

@@ -6,6 +6,12 @@ const Home = (props) => {
 
         <p>Home</p>
         <p>Welcome - -</p>
+
+        <button>Black Lives Matter</button>{' '}
+        <button>Wearing a Mask</button>{' '}
+        <button>Social Distancing</button>{' '}
+        <button>Antifa</button>{' '}
+        
     </div>
   );
 }
