@@ -60,6 +60,7 @@
     display: flex;
     justify-content: flex-start;
     width: 230px;
+    text-align: start;
 }
 
 .next-links {

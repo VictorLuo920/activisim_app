@@ -94,6 +94,10 @@
     text-decoration: none;
     color: black;
 }
+.red-description {
+    display: flex;
+    flex-direction: column;
+}
 
 .green {
     background-color: #70C1B3;
