@@ -27,3 +27,15 @@
     background-color: #70C1B3;
     padding: 20px;
 }
+
+.popular   {
+    margin: 50px;
+}
+
+.end-buttons-launch {
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+    justify-content: center;
+}
+

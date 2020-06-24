@@ -25,8 +25,8 @@ const BlmKeyP1 = (props) => {
                         </div>
 
                         <div className="under-div">
-                            <div className="box">
-
+                        <div>
+                                    <img  className="box"src="https://i.postimg.cc/rpp45fyP/Screen-Shot-2020-06-24-at-2-36-17-PM.png" alt=""/>
                             </div>
                             <div className="box-p">
                                 <p>“...but I think all lives matter” advice was compiled by American SportNet Reporter and Producer Donnovan Bennett. For more information you can read his interviews and listen to his podcast:</p>
