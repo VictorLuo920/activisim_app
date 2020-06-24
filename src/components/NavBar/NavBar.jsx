@@ -19,7 +19,7 @@ const NavBar = (props) => {
 
     return (
         <div className='NavBar'>
-            <Link to="/" className='NavBar-link'>Home</Link>
+            {/* <Link to="/" className='NavBar-link'>Home</Link>
             &nbsp;&nbsp;&nbsp;&nbsp;
         <Link to="/launchscreen" className='NavBar-link'>Launch Screen</Link>
             &nbsp;&nbsp;&nbsp;&nbsp;
@@ -27,7 +27,7 @@ const NavBar = (props) => {
             &nbsp;&nbsp;&nbsp;&nbsp;
         <Link to="/resources" className='NavBar-link'>Resources</Link>
             &nbsp;&nbsp;&nbsp;&nbsp;
-        <Link to="/create" className='NavBar-link'>Create Topic</Link>
+        <Link to="/create" className='NavBar-link'>Create Topic</Link> */}
 
             {nav}
         </div>

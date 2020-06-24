@@ -93,6 +93,7 @@ class App extends React.Component {
             exact path="/"
             render={(props) => (
               <Home
+              user={this.state.user}
                 {...props}
               />
             )}
@@ -101,6 +102,7 @@ class App extends React.Component {
             exact path="/launchscreen"
             render={(props) => (
               <LaunchScreen
+              user={this.state.user}
                 {...props}
               />
             )}
