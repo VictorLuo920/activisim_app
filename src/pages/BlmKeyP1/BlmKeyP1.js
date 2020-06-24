@@ -6,7 +6,7 @@ const BlmKeyP1 = (props) => {
   return (
     <div className="Home">
 
-        <p>BlmKeyP1</p>
+        {/* <p>BlmKeyP1</p> */}
 <div className="blm-kp1">
                 <div className="bkp1-banner">
                     <div className="blmkp1-header">
