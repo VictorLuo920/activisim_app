@@ -20,8 +20,17 @@ class BlmCommentsPage extends React.Component {
         <section>
           {props.blmComments.map((b) => (
             <article key={b.blmComment}>
+
+
               <div className="comments">
+
                 <div className="username">
+                  <div className="avi-div">
+                  <img className="avi" src="https://i.postimg.cc/sxrp4Qz1/Screen-Shot-2020-06-24-at-12-14-54-PM.png" alt=""/>
+                  </div>
+
+                <div className="comment-box">
+                  <div className="username-and-edit">
                   <p className="comment-p"> {b.creator}</p>
                   &nbsp;&nbsp;&nbsp;&nbsp;
                 <p>
@@ -35,12 +44,17 @@ class BlmCommentsPage extends React.Component {
                 </p>
                 </div>
                 <div className="comment-text">
-                  <p>{b.time}</p>
                   <p>{b.text}</p> 
                 </div>
-                  
-              <hr></hr>
+                </div>
+                  </div>
+                              <hr></hr>
+
+
               </div>
+
+
+
             </article>
           ))}</section>
           <div className="more-button">

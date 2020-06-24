@@ -40,8 +40,8 @@ const BlmKeyP2 = (props) => {
                         </div>
 
                         <div className="under-div">
-                            <div className="box">
-
+                            <div>
+                                    <img  className="box"src="https://i.postimg.cc/prTSx69D/Screen-Shot-2020-06-24-at-12-12-43-PM.png" alt=""/>
                             </div>
                             <div className="box-p">
                                 <p>“I don’t see color” advice was compiled by Project Ready: Reimagining Equity & Access for For Diverse Youth. For more information on their free online professional development curriculum, you can visit their website:</p>

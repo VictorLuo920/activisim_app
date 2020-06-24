@@ -22,10 +22,26 @@
 .comments {
     width: 600px;
     margin-left: 400px;
+    padding: 20px;
+}
+
+.avi-div {
+}
+.avi {
+    width: 100px;
+    margin-right: 40px;
+
+}
+
+.username-and-edit {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 .username {
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
+    flex-direction: row;
     
 }
 
