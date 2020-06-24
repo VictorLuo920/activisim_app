@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-class BlmCommentsPage extends React.Component {
+class SocialDistancingCommentsPage extends React.Component {
 
   render() {
     const { props } = this;
     return (
       <div>
-        <header>Black Lives Matter</header>
+        <header>Social Distancing</header>
         <p>CommentsPage</p>
 
         <Link to="/addblmcomment">Add a comment</Link>
@@ -31,4 +31,4 @@ class BlmCommentsPage extends React.Component {
     );
   }
 }
-export default BlmCommentsPage;
+export default SocialDistancingCommentsPage;
