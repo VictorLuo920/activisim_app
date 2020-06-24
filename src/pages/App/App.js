@@ -6,6 +6,8 @@ import Home from "../../pages/Home/Home.js";
 import LaunchScreen from "../../pages/LaunchScreen/LaunchScreen.js";
 import Resources from '../../pages/Resources/Resources'
 import TopicPage from '../../components/TopicPage/TopicPage'
+import BLMTopicPage from '../../pages/BLMTopicPage/BLMTopicPage'
+import BlmCommonResponses from '../../pages/BlmCommonResponses/BlmCommonResponses'
 import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
 import userService from '../../utils/userService';
@@ -128,6 +130,22 @@ class App extends React.Component {
             exact path="/responsepage"
             render={(props) => (
               <ResponsePage
+                {...props}
+              />
+            )}
+          />
+          <Route
+            exact path="/blacklivesmatter"
+            render={(props) => (
+              <BLMTopicPage
+                {...props}
+              />
+            )}
+          />
+          <Route
+            exact path="/blmcommonresponses"
+            render={(props) => (
+              <BlmCommonResponses
                 {...props}
               />
             )}

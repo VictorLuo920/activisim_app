@@ -35,7 +35,7 @@ showDropdownMenu(event) {
          <div className="button" onClick={this.showDropdownMenu}> How Do I Explain </div>
           { this.state.displayMenu ? (
           <ul className="drop-ul">
-         <li className="drop-li"><a href="topicpage">Black Lives Matter</a></li>
+         <li className="drop-li"><a href="blacklivesmatter">Black Lives Matter</a></li>
          <li className="drop-li"><a className="active" href="topicpage">Prison Industrial Complex</a></li>
          <li className="drop-li"><a href="topicpage">Wearing Face Masks</a></li>
          <li className="drop-li"><a href="topicpage">Antifa</a></li>
