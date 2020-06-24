@@ -1,4 +1,7 @@
-.response-page-banner {
+.blm-responses-page-background {
+    background-color: lightgrey;
+    height: 1000px;
+}.response-page-banner {
     background-color: white;
     margin-top: 100px;
 }
