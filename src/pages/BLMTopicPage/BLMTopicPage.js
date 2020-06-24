@@ -5,8 +5,10 @@ import './BLMTopicPage.css'
 const BLMTopicPage = (props) => {
     return (
         <>
-            <div className="page-background">
-                <br />
+            <div 
+            // className="page-background"
+            >
+                {/* <br /> */}
                 <div className="page-banner">
                     <div className="blm-header" >
                         <h1>Black Lives Matter</h1>

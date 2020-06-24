@@ -1,10 +1,13 @@
 import React from 'react';
 import Dropdown from '../../components/DropDown/DropDown';
+import NavBar from '../../components/NavBar/NavBar';
 
 const Home = (props) => {
   return (
     <>
+    <NavBar user={props.user} handleLogout={props.handleLogout} />
     <div className="launchscreen">
+
         <div className="home-header">
             <div className="home-main"></div>
             <div>

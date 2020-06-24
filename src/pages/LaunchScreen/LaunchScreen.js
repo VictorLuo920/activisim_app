@@ -1,6 +1,7 @@
 import React from 'react';
 import './LaunchScreen.css'
 import Dropdown from '../../components/DropDown/DropDown';
+import userService from '../../utils/userService';
 
 const LaunchScreen = (props) => {
 
@@ -22,7 +23,7 @@ const LaunchScreen = (props) => {
                             <Dropdown />
                            
                         </div>
-                        <h1>Thanks for taking a step towards creating change!</h1>
+                        <h1>Thanks for taking a step towards creating change {props.user.name}!</h1>
                         <div className="discussion-bar">
         </div>
                 <div>
@@ -41,7 +42,7 @@ const LaunchScreen = (props) => {
                     <div className="end-back"><p>Antifa</p></div>
                 </div>
                 </div>
-                
+
                 <div>
                     <h1 className="popular">Coming Soon</h1>
                 </div>

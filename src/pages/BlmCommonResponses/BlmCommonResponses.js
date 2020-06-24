@@ -5,8 +5,10 @@ import './BlmCommonResponses.css'
 const BlmCommonResponses = (props) => {
 
   return (
-    <div className="blm-responses-page-background">
-        <br/>
+    <div 
+    // className="blm-responses-page-background"
+    >
+        {/* <br/> */}
         <div className="response-page-banner">
         <div className="responses-header">
             <br/>
