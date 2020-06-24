@@ -24,14 +24,12 @@
     margin-left: 400px;
 }
 .username {
-    background-color: aliceblue;
     display: flex;
     justify-content: flex-start;
     
 }
 
 .comment-text {
-    background-color: lightpink;
     display: flex;
     justify-content: flex-start;
     margin-left: 20px;
@@ -94,5 +92,11 @@
 .link {
     text-decoration: none;
     color: white;
+    font-weight: bold;
+}
+
+.edit-link {
+    /* text-decoration: none; */
+    color: grey;
     font-weight: bold;
 }

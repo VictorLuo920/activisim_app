@@ -1,0 +1,26 @@
+.resources-page-background {
+    background-color: white;
+    height: 1200px;
+}
+
+.resources {
+    background-color: #FFCB63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-bottom: 100px;
+    color: white;
+}
+
+.resources-footer {
+    background-color: #FFCB63;
+    height: 200px;
+
+}
+
+.news {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
