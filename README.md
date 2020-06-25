@@ -2,6 +2,13 @@
 
 #### making difficult conversations easier
 
+| :large_blue_circle: John Trujillo | :black_circle: Victor Luo | :red_circle: Isa Martinez |
+| ------------- |:-------------:| -----:|
+| UX Designers | :black_circle: Alyssa Campbell | :red_circle: Freddy Chen |
+
+
+
+
 ## App Description
 
 Product of GA Social Impact Hackathon. Theme: Activism.
