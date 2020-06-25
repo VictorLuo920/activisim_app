@@ -7,7 +7,7 @@
 
 | Software Engineers | :red_circle: Isa Martinez |:large_blue_circle: John Trujillo | :black_circle: Victor Luo | 
 | ------------- |:-------------:| -----:| -----:|
-| UX Designers |  :black_circle: Alyssa Campbell | :red_circle: Freddy Chen |
+| UX Designers   |  :black_circle: Alyssa Campbell | :red_circle: Freddy Chen |
 
 
 ## App Description
