@@ -29,8 +29,6 @@ In today's rapidly changing world, social issues are becoming wildly complex, fl
 
 ## Contributors
 
-| Software Engineers | :large_blue_circle: John Trujillo | :black_circle: Victor Luo | :red_circle: Isa Martinez |
-| ------------- |:-------------:| -----:| -----:|
 | UX Designers |  :black_circle: Alyssa Campbell | :red_circle: Freddy Chen |
-
-
+| ------------- |:-------------:| -----:| -----:|
+| Software Engineers | :large_blue_circle: John Trujillo | :black_circle: Victor Luo | :red_circle: Isa Martinez |
