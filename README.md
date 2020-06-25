@@ -3,6 +3,13 @@
 #### making difficult conversations easier
 
 
+## Contributors
+
+| Software Engineers | :red_circle: Isa Martinez |:large_blue_circle: John Trujillo | :black_circle: Victor Luo | 
+| ------------- |:-------------:| -----:| -----:|
+| UX Designers |  :black_circle: Alyssa Campbell | :red_circle: Freddy Chen |
+
+
 ## App Description
 
 ![App Screenshot 2](https://i.imgur.com/1ZL4XlR.png)
@@ -32,8 +39,4 @@ In today's rapidly changing world, social issues are becoming wildly complex, fl
 *Fonts brought to you by Google-Fonts ('Titilium')*
 
 
-## Contributors
 
-| Software Engineers | :red_circle: Isa Martinez |:large_blue_circle: John Trujillo | :black_circle: Victor Luo | 
-| ------------- |:-------------:| -----:| -----:|
-| UX Designers |  :black_circle: Alyssa Campbell | :red_circle: Freddy Chen |
