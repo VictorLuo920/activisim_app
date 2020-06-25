@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import './BLMTopicPage.css'
 
 const BLMTopicPage = (props) => {
     return (
         <>
-            <div 
+            <div
             // className="page-background"
             >
                 {/* <br /> */}
@@ -43,17 +42,14 @@ const BLMTopicPage = (props) => {
                 </div>
 
                 <div className="blm-buttons">
-
                     <div className="back-link">
-                    <h5><a href="/launchscreen" className="home-link">Back to Search</a></h5>
+                        <h5><a href="/launchscreen" className="home-link">Back to Search</a></h5>
                     </div>
-
                     <div className="common-responses-link">
-                        <Link to="/blmcommonresponses" className="green-link">See Common &nbsp;&nbsp;&nbsp;Responses</Link>
-                        {/* <br/> */}
+                        <h5 className="green-link"><a className="cr" href="/blmcommonresponses">Common Responses</a></h5>
                     </div>
-
                 </div>
+
             </div>
         </>
     );

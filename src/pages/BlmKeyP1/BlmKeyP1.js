@@ -41,26 +41,42 @@ const BlmKeyP1 = (props) => {
                         </div>
 
                         <div className="feeling-buttons">
+                            <div className="red-ptag">
+
                             <div className="back">
                                 <Link className="pkp1-back-link" to="/blmcommonresponses">Back to Responses</Link>
                             </div>
+                            </div>
 
-                            {/* <div className="red-description"> */}
+                       
+                        <div className="red-ptag">
                             <div className="red">
                                 <Link className="text-link" to="/blmcommentspage">Not Ready</Link>
                             </div>
-                            {/* <div>
-                                    <p className="red-p">I want to see how other people have dealt with this situation in their own experiences</p>
-                                </div> */}
-                            {/* </div> */}
+                            <div>
+                                <p className="red-p">I want to see how other people have dealt with this situation in their own experiences</p>
+                            </div>
+                        </div>
+                            
+                        <div className="red-ptag">
 
                             <div className="yellow">
                                 <Link className="text-link" to="/resources">Just Ok</Link>
                             </div>
+                            <div>
+                                <p className="red-p">I’d like to find out more. Are there any other credible resources I can reference?</p>
+                            </div>
+                        </div>
+                        <div className="red-ptag">
                             <div className="green">
                                 <Link className="text-link" to="/launchscreen">Pretty Good</Link>
                             </div>
+                            <div>
+                                <p className="red-p">I’m ready to teach someone else and have an objective conversation!</p>
+                            </div>
                         </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

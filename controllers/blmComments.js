@@ -11,7 +11,6 @@ module.exports = {
 async function create(req, res) {
     req.body.user = req.user._id
     req.body.creator = req.user.name
-    req.body.time = req.time
     try {
         await blmComment.create(req.body)
         index(req, res)
