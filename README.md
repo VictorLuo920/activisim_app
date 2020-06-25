@@ -9,6 +9,9 @@ Product of GA Social Impact Hackathon. Theme: Activism.
 
 In today's rapidly changing world, social issues are becoming wildly complex, flash-button issues that are difficult to have productive conversations about. This application seeks to provide a space that acts as a hub for users to access valuable resources to better their own understanding of complex issues, interact with one another to see the dialogues about particular issues, and overall have a gamified experience that motivates users to take an active role in having difficult conversations. 
 
+| [Link to Heroku](https://how-do-i-explain-activism.herokuapp.com/) :trollface: | [Link to Deck](https://how-do-i-explain-activism.herokuapp.com/)  |
+
+
 ## Technology + Techniques: 
 
 ###### :small_blue_diamond: HTML5
