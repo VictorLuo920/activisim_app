@@ -119,12 +119,20 @@
 }
 .green-link {
     text-decoration: none;
-    color: white;
     font-weight: bold;
-    padding-left: 37px;
-    font-size: 11px;
+    font-size: 13px;
+    border-radius: 10px;
+    padding: 15px;
+    width: 130px;
+    height: 15px;
+    display: flex;
+    cursor: pointer;
+    color: white;
 }
 
+.cr {
+    color: white;
+}
 h5 {
     margin: 0px;
 }

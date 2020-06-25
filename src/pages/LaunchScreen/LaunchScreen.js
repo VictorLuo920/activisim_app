@@ -1,7 +1,6 @@
 import React from 'react';
 import './LaunchScreen.css'
 import Dropdown from '../../components/DropDown/DropDown';
-import userService from '../../utils/userService';
 
 const LaunchScreen = (props) => {
 

@@ -29,7 +29,7 @@ class App extends React.Component {
   state = {
     user: userService.getUser(),
     blmComments: [],
-    newBlmComments: []
+    newBlmComment: []
 
   }
 
@@ -163,6 +163,7 @@ class App extends React.Component {
                 user={this.state.user}
                 handleAddBlmComment={this.handleAddBlmComment}
                 blmComments={this.state.blmComments}
+                handleChange={this.handleChange}
                 newBlmComment={this.state.newBlmComment}
                 formRef={this.formRef}
                 {...props}

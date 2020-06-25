@@ -19,7 +19,6 @@ class EditBlmComment extends Component {
         console.log("word")
         e.preventDefault()
         this.props.handleUpdateBlmComment(this.state.formData)
-        console.log(this.state.formData)
         this.props.history.push('/blmcommentspage')
     }
 
@@ -52,13 +51,14 @@ class EditBlmComment extends Component {
                                 ref={this.formRef}
                                 autoComplete='off'
                                 onSubmit={this.handleSubmit}>
-                                <input
+                                <textarea
+                                    rows="8" cols="45"
                                     name='text'
                                     type='text'
                                     value={this.state.formData.text}
                                     onChange={this.handleChange}
                                     required>
-                                </input>
+                                </textarea>
                                 <button
                                     type='submit'
                                     disabled={this.state.invalidForm}
